@@ -1,0 +1,15 @@
+"C:\Daemon\amd64\prunsrv.exe" //IS//cbrparser^
+ --DisplayName "Cbr Rates Parser"^
+ --Description "Parse rates from cbr.ru and save it in database"^
+ --Startup=auto^
+ --Install="C:\Daemon\amd64\prunsrv.exe"^
+ --Jvm="C:\Program Files\Java\jdk-11.0.2\bin\server\jvm.dll" ^
+ --Classpath "C:\Users\admin\IdeaProjects\cbrratesparser\target\cbr-rates-parser-1.0-SNAPSHOT-jar-with-dependencies.jar"^
+ --Environment="PATH=C:\Program Files\Java\jdk-11.0.2\bin"^
+ --JavaHome="C:\Program Files\Java\jdk-11.0.2"^
+ --StartPath=C:\Users\admin\IdeaProjects\cbrratesparser\target\^
+ --JvmOptions="-XX:+HeapDumpOnOutOfMemoryError"^
+ --StartMode=jvm^
+ --StartClass=ru.mtu.Main^
+  --StdOutput=C:\Users\admin\IdeaProjects\cbrratesparser\target\service_out.log^
+  --StdError=C:\Users\admin\IdeaProjects\cbrratesparser\target\service_err.log

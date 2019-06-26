@@ -1,0 +1,8 @@
+2019-06-26 20:08:06,228 INFO i.g.b.w.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Windows\system32\config\systemprofile\.m2\repository\webdriver\chromedriver\win32\75.0.3770.90\chromedriver.exe
+2019-06-26 20:08:11,186 INFO r.m.Main [main] Rates parse success!
+2019-06-26 20:08:11,199 INFO r.m.Main [main] Rates(id=null, timeStamp=2019-06-26T20:08:11.185662400, usdRate=62.5229, eurRate=71.2323)
+2019-06-26 20:08:11,306 INFO r.m.d.DBUtil [main] SQL EXEC: INSERT into cbr.rates (time, usd_rate, eur_rate) VALUES (?, ?, ?); [2019-06-26T20:08:11.185662400, 62.5229, 71.2323]
+2019-06-26 20:08:11,366 INFO r.m.Main [main] Rates write in db success!
+2019-06-26 20:08:11,366 INFO r.m.d.DBUtil [main] SQL EXEC: select * from cbr.rates ORDER BY id DESC LIMIT 1; []
+2019-06-26 20:08:11,412 INFO r.m.Main [main] Last record in db: Rates(id=11, timeStamp=2019-06-26T20:08:11.185662, usdRate=62.5229, eurRate=71.2323)
+2019-06-26 20:08:11,412 INFO r.m.Main [main] Waiting 30 minutes for next parse
